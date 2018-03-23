@@ -1,0 +1,213 @@
+ssh-keygen -t rsa -b 4096 -C "tli@openclinica.com"
+
+https://docs.openclinica.com/3.1/technical-documents/developing-openclinica
+
+
+https://help.github.com/articles/configuring-a-remote-for-a-fork/
+
+Github
+https://help.github.com/articles/fork-a-repo/
+https://help.github.com/articles/syncing-a-fork/
+https://guides.github.com/activities/hello-world/
+-- add/delete branch
+-- note: delete from source tree is easier, just delete from local and remote folder
+https://help.github.com/enterprise/2.12/user/articles/creating-and-deleting-branches-within-your-repository/
+
+Jmesa
+http://www.developerfusion.com/project/19029/jmesa/
+https://dzone.com/articles/running-table-with-jmesa
+
+Eclipse plugin references:
+http://www.ronlievens.com/tutorials/java-eclipse-installation-guide
+
+
+hibernate tools
+http://download.jboss.org/jbosstools/oxygen/stable/updates/
+http://j2yogi.blogspot.com/2015/09/hbm2dao-auto-generate-pojo-model-and.html
+
+
+jquery datatable using with AngularJs
+https://www.phpflow.com/misc/angular/simple-angular-datatables-example-with-angular-4/
+https://l-lin.github.io/angular-datatables/#/welcome
+
+
+oc3 training
+https://openclinica.litmos.com/home/learningPath/23727
+========================================================================================================================
+
+QE project:
+1.
+OpenClinica QE Project repository:
+  https://github.com/OpenClinica/oc-qe
+
+  Fork the project to your GitHub account then clone it to your local machine
+
+  Once the project has been cloned, do a git checkout on the branch "3.x"
+
+2.
+Install the Cucumber Eclipse Plug-in
+
+  Github:
+  https://github.com/cucumber/cucumber-eclipse
+  Plugin-website:
+  http://cucumber.github.io/cucumber-eclipse/
+
+3.
+  Import the project into Eclipse as a Maven project
+
+4.
+  Setup your application-<name>.properties (found in src/test/resources) file to point to your OpenClinica instance
+  You can copy the existing "application-qe-3x.properties" file and change it match yours
+
+5. The QE project is a Java based project that uses Selenium WebDriver to test the GUI.
+The project is layered into:
+
+    a. Cucumber Feature Files, human readable documents that map requirements/features to automation code,
+        a feature file has multiple scenarios, each scenario is made up of different combinations of steps
+
+    b. Steps Classes, Java Classes that perform combinations of methods defined in the service class
+          Ex: Create a subject and schedule them for an event
+
+    c. Service Classes, Java Classes that perform different logical user actions 
+          (login as user, navigate to a certain page, check an e-mail, etc.)
+
+    d. Page Object Classes, Acts as an interface for interacting with the different web pages,
+        used by the service class (to click on web elements, look for text on a page, enter a username, etc.)
+
+
+Other QE references
+https://automationrhapsody.com/introduction-to-cucumber-and-bdd-with-examples/
+https://medium.com/agile-vision/cucumber-bdd-part-2-creating-a-sample-java-project-with-cucumber-testng-and-maven-127a1053c180
+http://www.baeldung.com/cucumber-spring-integration
+https://stackoverflow.com/questions/21515382/how-to-run-cucumber-jvm-tests-with-maven
+https://www.jetbrains.com/help/idea/running-cucumber-tests.html
+https://www.ibm.com/developerworks/library/a-automating-ria/index.html
+http://www.javarticles.com/2016/02/spring-contextconfiguration-classes-example.html
+http://www.javarticles.com/2016/02/spring-contextconfiguration-annotation-example.html
+https://dzone.com/articles/junit-spring-%E2%80%93-what-you-don%E2%80%99t
+https://www.mkyong.com/spring/spring-profiles-example/
+https://www.mkyong.com/spring/spring-propertysources-example/
+http://shengwangi.blogspot.com/2015/06/how-to-set-dev-test-prod-in-spring-xml.html
+http://www.baeldung.com/cucumber-rest-api-testing
+http://toolsqa.com/cucumber/cucumber-tags/
+-- very good cucumber short courses
+https://www.youtube.com/watch?v=pD4B839qfos
+https://www.youtube.com/watch?v=093grYNqJ9g
+https://www.youtube.com/watch?v=lYXuDDo63MU
+https://www.youtube.com/watch?v=wNhQSFpAg_o
+https://www.youtube.com/watch?v=QRpP08PEg5I
+https://www.youtube.com/watch?v=WMtvmQpNCQo
+https://www.youtube.com/watch?v=i9GWtVElmI0
+https://www.youtube.com/watch?v=7336GgdqS7c
+https://www.youtube.com/watch?v=gidBcAz86Ww
+https://www.youtube.com/watch?v=p4ZuYuHahxw
+https://www.youtube.com/watch?v=3rGOp4egOQQ
+https://www.youtube.com/watch?v=KfK5xZg6K-k
+https://www.youtube.com/watch?v=jeyrHpsIyas
+https://www.youtube.com/watch?v=x5Ru0f8uOqw
+https://www.youtube.com/watch?v=u8XH46u1QAw
+
+https://www.youtube.com/watch?v=pO5Ry_GLC60
+
+
+
+read list:
+===============================================================
+https://dzone.com/articles/observer-design-pattern-java
+https://dzone.com/articles/java-8-lambda-functions-usage-examples
+http://www.mojohaus.org/jaxb2-maven-plugin/Documentation/v2.2/example_xjc_basic.html
+https://www.programcreek.com/java-api-examples/?api=org.springframework.oxm.jaxb.Jaxb2Marshaller
+https://www.concretepage.com/spring/spring-jaxb-integration-annotation-pretty-print-example-with-jaxb2marshaller
+https://docs.spring.io/spring-ws/sites/1.5/reference/html/oxm.html
+https://www.journaldev.com/996/java-inner-class
+https://www.mkyong.com/java/jaxb-hello-world-example/
+https://stackoverflow.com/questions/15947051/convert-a-string-to-a-xml-element-java
+
+https://dzone.com/articles/how-serialize-javautildate
+https://www.java2novice.com/restful-web-services/http-basic-authentication/
+https://castor-data-binding.github.io/castor/reference-guide/reference/xml/xml-mapping.html
+https://www.java-forums.org/networking/60379-httpurlconnection-post-data.html
+https://stackoverflow.com/questions/20813496/tomcat-exception-cannot-call-senderror-after-the-response-has-been-committed
+https://examples.javacodegeeks.com/enterprise-java/rest/jersey/xml-example-with-jersey-jaxb/
+https://howtodoinjava.com/spring/spring-restful/spring-rest-hello-world-xml-example/
+
+
+--- javascripts promise
+https://developers.google.com/web/fundamentals/primers/promises
+https://spring.io/understanding/javascript-promises
+https://www.sitepoint.com/overview-javascript-promises/
+https://datatables.net/forums/discussion/21286/datatables-and-angularjs
+
+-- jquery
+https://www.w3schools.com/jquery/default.asp
+
+--- spring
+https://www.mkyong.com/spring-mvc/spring-3-rest-hello-world-example/
+https://dzone.com/articles/build-rest-web-service-using-spring
+https://spring.io/guides/tutorials/bookmarks/
+https://www.genuitec.com/spring-frameworkrestcontroller-vs-controller/
+https://spring.io/guides/gs/rest-service/
+
+https://coderanch.com/t/520960/framework/Integarting-existing-jsps-Servlets-Web
+http://andresesfm.github.io/blog/2014/09/11/servlet-to-spring-mvc-migration-guide/
+
+https://spring.io/guides/gs/consuming-rest-jquery/
+https://spring.io/guides/gs/consuming-rest-angularjs/
+https://docs.spring.io/spring-ws/site/reference/html/server.html
+http://javahonk.com/spring-programmatic-transaction-using-transactiontemplate/
+http://andresesfm.github.io/blog/2014/09/11/servlet-to-spring-mvc-migration-guide/
+https://www.journaldev.com/8934/spring-rest-xml-and-json-example
+https://stackoverflow.com/questions/35270660/accepting-returning-xml-json-request-and-response-spring-mvc
+https://stackoverflow.com/questions/38977817/how-to-retrieve-an-xml-string-from-a-post-requestbody-in-swagger-generated-sprin
+https://stackoverflow.com/questions/16548182/spring-rest-httpmediatypenotsupportedexception-content-type-application-json
+https://www.mkyong.com/webservices/jax-rs/restfull-java-client-with-java-net-url/
+https://stackoverflow.com/questions/6451377/loading-context-in-spring-using-web-xml
+http://forum.spring.io/forum/spring-projects/web/30331-context-param-contextconfiglocation-in-web-xml
+
+
+----GIT
+https://stackoverflow.com/questions/4746672/put-current-changes-in-a-new-git-branch?rq=1
+https://stackoverflow.com/questions/3899627/create-git-branch-with-current-changes
+https://github.com/blog/1377-create-and-delete-branches
+
+-- log4j
+https://logging.apache.org/log4j/1.2/manual.html
+http://www.mkyong.com/spring-mvc/spring-mvc-log4j-integration-example/
+
+--maven
+https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
+https://maven.apache.org/guides/getting-started/index.html
+https://www.youtube.com/watch?v=i5pP5i9uS9c
+
+-- Database/sql
+https://www.w3schools.com/sql/sql_injection.asp
+https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API#tab=Downloads
+https://stackoverflow.com/questions/1812891/java-escape-string-to-prevent-sql-injection
+https://docs.jboss.org/hibernate/orm/3.3/reference/en-US/html/querysql.html
+https://www.mkyong.com/hibernate/hibernate-query-examples-hql/
+https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet
+https://security.stackexchange.com/questions/95364/how-to-perform-sql-insert-or-update-command-using-sql-injection
+https://msdn.microsoft.com/en-us/library/ff648339.aspx
+https://software-security.sans.org/developer-how-to/fix-sql-injection-in-java-using-prepared-callable-statement
+https://www.mkyong.com/jdbc/jdbc-preparestatement-example-insert-a-record/
+https://www.mkyong.com/jdbc/how-to-insert-date-value-in-preparedstatement/
+https://stackoverflow.com/questions/18614836/using-setdate-in-preparedstatement
+https://stackoverflow.com/questions/28871482/use-sysdate-as-parameter-to-insert-into-database
+https://stackoverflow.com/questions/7626076/how-to-set-current-date-and-time-using-prepared-statement?rq=1
+
+-- Eclipse
+http://www.eclipse.org/webtools/community/tutorials/XMLCatalog/XMLCatalogTutorial.html
+https://steveperkins.com/using-web-deployment-assembly-options-to-make-eclipse-play-nice-with-maven/
+-- Tomcat
+https://stackoverflow.com/questions/3970773/deploy-exploded-folder-to-tomcat-in-eclipse
+https://www.mkyong.com/eclipse/how-to-configure-hot-deploy-in-eclipse/
+
+
+
+-- google trend
+https://trends.google.com/trends/explore?cat=13&q=angular,react,vuejs,polymer,jQuery
+===============================================================
+To read:
+https://www.tutorialspoint.com/spring/index.htm
+
+https://www.w3schools.com/xml/default.asp
