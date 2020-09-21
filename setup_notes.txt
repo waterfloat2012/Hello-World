@@ -1,3 +1,4 @@
+--GIT
 ssh-keygen -t rsa -b 4096 -C "tli@openclinica.com"
 
 https://docs.openclinica.com/3.1/technical-documents/developing-openclinica
@@ -6,7 +7,6 @@ https://docs.openclinica.com/3.1/technical-documents/developing-openclinica
 https://help.github.com/articles/configuring-a-remote-for-a-fork/
 
 Github
-======
 https://help.github.com/articles/fork-a-repo/
 https://help.github.com/articles/syncing-a-fork/
 https://guides.github.com/activities/hello-world/
@@ -14,12 +14,35 @@ https://guides.github.com/activities/hello-world/
 -- note: delete from source tree is easier, just delete from local and remote folder
 https://help.github.com/enterprise/2.12/user/articles/creating-and-deleting-branches-within-your-repository/
 
+-- get new branch from remote/upstream
+https://stackoverflow.com/questions/15730551/get-new-upstream-branch-with-git
+
+--Git
+https://confluence.atlassian.com/bitbucket/checkout-a-branch-into-a-local-repository-313466957.html
+https://stackoverflow.com/questions/17404316/the-following-untracked-working-tree-files-would-be-overwritten-by-merge-but-i/33803997
+
+-- GIt/Stash
+https://git-scm.com/docs/git-stash
+
+-- git commands 
+>git status (check current code status, come from which branch)
+>git branch -r (list all remote branches)
+>git branch 464 --track upstream/4.6.4  (create local branch named 464 based on remote branch upstream/4.6.4)
+>git branch (list all local branches, top branch is my current branch)
+
+>git cherry-pick 688e5782bb479d6a764e78efbebcbd45c5f54502 
+(merge commit 688e5782bb479d6a764e78efbebcbd45c5f54502 in other branch into my current branch,
+688e5782bb479d6a764e78efbebcbd45c5f54502 is the commit track number copied from github/pull request/find the exact pull request, click it then click Commits TAB)
+
 Jmesa
 http://www.developerfusion.com/project/19029/jmesa/
 https://dzone.com/articles/running-table-with-jmesa
 
-Eclipse plugin references:
+Eclipse plugin references and set up:
 http://www.ronlievens.com/tutorials/java-eclipse-installation-guide
+
+https://stackoverflow.com/questions/9464998/eclipse-the-resource-is-not-on-the-build-path-of-a-java-project
+https://stackoverflow.com/questions/7628686/eclipse-the-declared-package-does-not-match-the-expected-package
 
 
 hibernate tools
@@ -31,6 +54,28 @@ jquery datatable using with AngularJs
 https://www.phpflow.com/misc/angular/simple-angular-datatables-example-with-angular-4/
 https://l-lin.github.io/angular-datatables/#/welcome
 
+===Java/j2ee
+https://o7planning.org/en/10285/create-a-simple-java-web-application-using-servlet-jsp-and-jdbc
+https://www.journaldev.com/2008/async-servlet-example
+https://www.logicbig.com/tutorials/java-ee-tutorial/java-servlet/servlet-async.html
+https://www.logicbig.com/tutorials/java-ee-tutorial/java-servlet/servlet-async.html
+https://www.baeldung.com/spring-mvc-async-security
+https://www.baeldung.com/spring-requestmapping
+https://stackoverflow.com/questions/36740624/async-supportedtrue-async-supported-in-web-xml
+https://stackoverflow.com/questions/4104907/servlet-3-0-async-supported-does-not-work
+https://stackoverflow.com/questions/18565648/redirect-servlet-async-and-heart-beat
+https://www.journaldev.com/1016/java-thread-example
+https://stackoverflow.com/questions/2676687/how-does-one-implement-a-truly-asynchronous-java-thread
+
+https://stackoverflow.com/questions/4727628/new-jsp-in-a-parent-window-closing-a-popup-child-jsp-page
+https://stackoverflow.com/questions/2123514/java-lang-illegalstateexception-cannot-forward-sendredirect-create-session
+
+-- scheduler
+https://dzone.com/articles/schedulers-in-java-and-spring
+https://www.codejava.net/java-core/concurrency/java-concurrency-scheduling-tasks-to-execute-after-a-given-delay-or-periodically
+
+--- HttpClient
+https://www.baeldung.com/httpclient-timeout
 
 oc3 training
 https://openclinica.litmos.com/home/learningPath/23727
@@ -91,6 +136,10 @@ https://www.mkyong.com/spring/spring-propertysources-example/
 http://shengwangi.blogspot.com/2015/06/how-to-set-dev-test-prod-in-spring-xml.html
 http://www.baeldung.com/cucumber-rest-api-testing
 http://toolsqa.com/cucumber/cucumber-tags/
+https://blog.knoldus.com/tutorial-3-using-tags-in-cucumber/
+--xpath
+https://www.guru99.com/xpath-selenium.html
+
 -- very good cucumber short courses
 https://www.youtube.com/watch?v=pD4B839qfos
 https://www.youtube.com/watch?v=093grYNqJ9g
@@ -107,10 +156,20 @@ https://www.youtube.com/watch?v=KfK5xZg6K-k
 https://www.youtube.com/watch?v=jeyrHpsIyas
 https://www.youtube.com/watch?v=x5Ru0f8uOqw
 https://www.youtube.com/watch?v=u8XH46u1QAw
+https://wiki.saucelabs.com/display/DOCS/Getting+Started+with+Selenium+for+Automated+Website+Testing
+https://saucelabs.com/resources/automated-testing/selenium-for-ios
+https://wiki.saucelabs.com/display/DOCS/Java+Example+Script+for+Android+Mobile+Application+Tests
 
 https://www.youtube.com/watch?v=pO5Ry_GLC60
 
+https://cucumber.io/docs/guides/10-minute-tutorial/
 
+mvn archetype:generate -DarchetypeGroupId=io.cucumber -DarchetypeArtifactId=cucumber-archetype -DarchetypeVersion=6.2.2 -DgroupId=hellocucumber -DartifactId=hellocucumber -Dpackage=hellocucumber -Dversion=1.0.0-SNAPSHOT -DinteractiveMode=false 
+
+-- automation test emoji
+https://stackoverflow.com/questions/40354324/code-to-enter-emojis-from-mobile-keyboard-to-run-appium-script?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+https://stackoverflow.com/questions/31709140/how-to-handle-org-openqa-selenium-webdriverexception-chromedriver-only-support?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+https://saucelabs.com/blog/can-selenium-be-used-for-mobile-testing
 
 read list:
 ===============================================================
@@ -131,16 +190,24 @@ https://www.java-forums.org/networking/60379-httpurlconnection-post-data.html
 https://stackoverflow.com/questions/20813496/tomcat-exception-cannot-call-senderror-after-the-response-has-been-committed
 https://examples.javacodegeeks.com/enterprise-java/rest/jersey/xml-example-with-jersey-jaxb/
 https://howtodoinjava.com/spring/spring-restful/spring-rest-hello-world-xml-example/
+https://www.mkyong.com/spring-mvc/spring-mvc-and-list-example/
 
 
---- javascripts promise
+--- javascripts 
 https://developers.google.com/web/fundamentals/primers/promises
 https://spring.io/understanding/javascript-promises
 https://www.sitepoint.com/overview-javascript-promises/
 https://datatables.net/forums/discussion/21286/datatables-and-angularjs
+https://www.codementor.io/proloser/what-should-beginners-choose-angularjs-ember-js-or-backbone-js-8r7xkdved
+https://www.tutorialspoint.com/backbonejs/backbonejs_quick_guide.htm
+http://chapter31.com/2006/12/07/including-js-files-from-within-js-files/
+
+
 
 -- jquery
 https://www.w3schools.com/jquery/default.asp
+-- heartbeat
+https://stackoverflow.com/questions/25820113/jquery-send-heartbeat-when-viewing-page
 
 --- spring
 https://www.mkyong.com/spring-mvc/spring-3-rest-hello-world-example/
@@ -148,7 +215,7 @@ https://dzone.com/articles/build-rest-web-service-using-spring
 https://spring.io/guides/tutorials/bookmarks/
 https://www.genuitec.com/spring-frameworkrestcontroller-vs-controller/
 https://spring.io/guides/gs/rest-service/
-
+https://stackoverflow.com/questions/24339990/how-to-convert-a-multipart-file-to-file
 https://coderanch.com/t/520960/framework/Integarting-existing-jsps-Servlets-Web
 http://andresesfm.github.io/blog/2014/09/11/servlet-to-spring-mvc-migration-guide/
 
@@ -165,11 +232,34 @@ https://www.mkyong.com/webservices/jax-rs/restfull-java-client-with-java-net-url
 https://stackoverflow.com/questions/6451377/loading-context-in-spring-using-web-xml
 http://forum.spring.io/forum/spring-projects/web/30331-context-param-contextconfiglocation-in-web-xml
 
+https://stackoverflow.com/questions/18713415/user-activity-tracking-or-logging-with-javascript
+https://stackoverflow.com/questions/25420745/how-to-set-spring-active-profiles-with-maven-profiles
+
+https://spring.io/guides/gs/producing-web-service/
 
 ----GIT
 https://stackoverflow.com/questions/4746672/put-current-changes-in-a-new-git-branch?rq=1
 https://stackoverflow.com/questions/3899627/create-git-branch-with-current-changes
 https://github.com/blog/1377-create-and-delete-branches
+https://github.com/rotati/wiki/wiki/Git:-Combine-all-messy-commits-into-one-commit-before-merging-to-Master-branch
+https://git-scm.com/book/en/v1/Git-Tools-Stashing
+https://gist.github.com/CristinaSolana/1885435
+https://codeshare.co.uk/blog/how-to-solve-the-github-error-fatal-httprequestexception-encountered/
+https://stackoverflow.com/questions/16955980/git-merge-master-into-feature-branch
+--Keeping a fork up to date
+https://gist.github.com/CristinaSolana/1885435
+https://help.github.com/articles/resolving-a-merge-conflict-on-github/
+
+https://github.com/genome/docs/wiki/How-do-I-fix-my-pull-request-if-it-cannot-be-automatically-merged%3F
+https://gist.github.com/CristinaSolana/1885435
+https://help.github.com/articles/configuring-a-remote-for-a-fork/
+https://help.github.com/articles/syncing-a-fork/
+https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
+-- update current branch from parent branch
+https://stackoverflow.com/questions/6836461/updating-the-current-branch-from-parent-branch
+
+--Git/ merge, conflicts
+https://blog.github.com/2016-12-12-resolve-simple-merge-conflicts-on-github/
 
 -- log4j
 https://logging.apache.org/log4j/1.2/manual.html
@@ -179,6 +269,9 @@ http://www.mkyong.com/spring-mvc/spring-mvc-log4j-integration-example/
 https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
 https://maven.apache.org/guides/getting-started/index.html
 https://www.youtube.com/watch?v=i5pP5i9uS9c
+https://stackoverflow.com/questions/6625752/do-you-know-the-maven-profile-for-mvnrepository-com?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+https://www.javahelps.com/2017/10/install-apache-maven-on-linux.html
+http://doduck.com/adding-local-jar-in-maven-local-repository/
 
 -- Database/sql
 https://www.w3schools.com/sql/sql_injection.asp
@@ -195,6 +288,48 @@ https://www.mkyong.com/jdbc/how-to-insert-date-value-in-preparedstatement/
 https://stackoverflow.com/questions/18614836/using-setdate-in-preparedstatement
 https://stackoverflow.com/questions/28871482/use-sysdate-as-parameter-to-insert-into-database
 https://stackoverflow.com/questions/7626076/how-to-set-current-date-and-time-using-prepared-statement?rq=1
+https://stackoverflow.com/questions/38549/what-is-the-difference-between-inner-join-and-outer-join
+https://www.postgresql.org/docs/9.1/static/runtime-config-compatible.html
+https://www.postgresql.org/docs/9.1/static/datatype-datetime.html
+http://www.postgresqltutorial.com/creating-first-trigger-postgresql/
+
+postgres sql example:
+--date
+SELECT *
+  FROM public.study_subject A, public.subject B
+  where A.label=B.unique_identifier and B.date_created > now()::date -365;
+-- sub query
+select * from (
+    SELECT user_name, count(*) as cnt
+    FROM public.user_account
+    group by user_name
+              ) as sub
+    where  cnt >1;
+	
+https://www.w3resource.com/PostgreSQL/postgresql-subqueries.php#CP
+
+
+-- mongoDB
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
+https://www.youtube.com/watch?v=pWbMrx5rVBE
+
+-- stored procedure
+http://www.postgresqltutorial.com/plpgsql-cursor/
+https://stackoverflow.com/questions/18315633/calling-functions-with-exec-instead-of-select
+https://www.postgresql.org/docs/9.3/static/functions-string.html
+
+-- sql injection
+https://www.veracode.com/security/sql-injection
+
+-- Database/liquibase
+https://www.liquibase.org/quickstart.html
+http://www.liquibase.org/tutorial-using-oracle
+https://thoughts-on-java.org/automatic-database-updates-integrating-liquibase/
+
+-- xml/XSD
+https://docstore.mik.ua/orelly/xml/schema/ch08_02.htm
+http://w3-org.9356.n7.nabble.com/Restriction-error-td249737.html
+
 
 -- Eclipse
 http://www.eclipse.org/webtools/community/tutorials/XMLCatalog/XMLCatalogTutorial.html
@@ -204,11 +339,867 @@ https://stackoverflow.com/questions/3970773/deploy-exploded-folder-to-tomcat-in-
 https://www.mkyong.com/eclipse/how-to-configure-hot-deploy-in-eclipse/
 
 
+--web XSS
+https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet
+https://www.owasp.org/index.php/OWASP_Java_Encoder_Project#tab=Use_the_Java_Encoder_Project
+https://stackoverflow.com/questions/39131159/how-to-use-encode-forhtml-in-a-javascript-file
+https://stackoverflow.com/questions/1159729/java-best-practices-to-prevent-cross-site-scripting
+https://stackoverflow.com/questions/2658922/xss-prevention-in-jsp-servlet-web-application
+https://www.ibm.com/support/knowledgecenter/en/SSZLC2_8.0.0/com.ibm.commerce.developer.doc/refs/rsdjspbpescapexml.htm
+https://www.tutorialspoint.com/jsp/jstl_function_escapexml.htm
+https://www.ibm.com/developerworks/library/se-prevent/
+https://stackoverflow.com/questions/47772984/removing-cross-site-scripting-in-java
+https://stackoverflow.com/questions/1265282/recommended-method-for-escaping-html-in-java
+https://stackoverflow.com/questions/2794137/sanitizing-user-input-before-adding-it-to-the-dom-in-javascript
+https://stackoverflow.com/questions/2405117/difference-between-window-location-href-window-location-href-and-window-location
+https://stackoverflow.com/questions/20855482/preventing-html-and-script-injections-in-javascript
+https://stackoverflow.com/questions/6052616/what-does-the-regular-expression-g-mean
+
+
+--Python
+https://marketplace.visualstudio.com/items?itemName=ms-python.python
+https://code.visualstudio.com/docs/python/python-tutorial#_prerequisites
+https://stackoverflow.com/questions/28534460/lxml-etree-xml-valueerror-for-unicode-string
+https://docs.python.org/3.7/tutorial/index.html
+https://stackoverflow.com/questions/4446366/why-am-i-getting-indentationerror-expected-an-indented-block
+http://www.pydev.org/manual_101_root.html
+
+-- angular
+https://angular.io/guide/quickstart
+https://stackoverflow.com/questions/49007598/angular-5-tour-of-heroes-tutorial-cannot-find-module-angular-in-memory-web
+
+-- JSP
+https://www.ibm.com/developerworks/java/tutorials/j-introjsp/j-introjsp.html#
+https://stackoverflow.com/questions/220243/how-comment-a-jsp-expression
+http://www.xyzws.com/JSPfaq/how-to-use-comments-in-jsp-pages/8
+https://www.w3schools.com/jsref/jsref_escape.asp
+https://beginnersbook.com/2013/05/jsp-tutorial-directives/
+https://stackoverflow.com/questions/4318891/jstl-taglibs-not-recognized-when-declared-in-common-header
+https://stackoverflow.com/questions/4987977/does-the-order-of-javascript-files-matter-when-they-are-all-combined-into-one-f
+https://stackoverflow.com/questions/985431/max-parallel-http-connections-in-a-browser
+https://www.w3schools.com/howto/howto_js_filter_table.asp
+
+-- html
+https://www.w3schools.com/charsets/ref_utf_symbols.asp
+https://stackoverflow.com/questions/47187165/convert-55357-56911-to-emoji-in-html-using-php
+http://www.iemoji.com/view/emojitweets/6/smileys-people/smiling-face-with-heart-eyes/chronological/30446
+http://www.convertstring.com/EncodeDecode/HtmlDecode
+https://www.quackit.com/character_sets/emoji/emoji_v3.0/unicode_emoji_v3.0_characters_all.cfm
+
+-- XSLT
+https://quotidian-ennui.github.io/blog/2012/03/02/dynamically-switching-xslt-processing-engines/
+
+
+-- veracode
+https://www.veracode.com/blog/security-news/greenlight-free-trial
+
+-- performance profiling
+https://stackoverflow.com/questions/25731711/how-to-profile-a-java-web-application-servlet-call-in-eclipse-ee-luna
+http://www.baeldung.com/java-profilers
+https://www.youtube.com/watch?v=3o4hS7hg_RU
+http://ignaciosuay.com/how-to-connect-a-java-profiler-like-visualvm-or-jconsole-to-a-remote-tomcat-running-on-amazon-ec2/
+
+-- Spring:
+http://andresesfm.github.io/blog/2014/09/11/servlet-to-spring-mvc-migration-guide/
+https://stackoverflow.com/questions/22534396/can-a-simple-jsp-and-servlet-code-be-migrated-to-spring-framework
+https://stackoverflow.com/questions/39173982/what-is-a-nosuchbeandefinitionexception-and-how-do-i-fix-it
+https://docs.spring.io/spring/docs/4.2.x/spring-framework-reference/html/transaction.html
+http://www.java2novice.com/spring/read-property-file-xml-config/
+
+
+-- Spring/restful
+https://www.journaldev.com/2552/spring-rest-example-tutorial-spring-restful-web-services
+https://stackoverflow.com/questions/10072284/requestmapping-with-multiple-values-with-pathvariable-spring-3-0/10072643
+https://stackoverflow.com/questions/3898442/spring-mvc-mapping-multiple-urls-to-same-controller
+
+https://stackoverflow.com/questions/25884711/spring-file-upload-restful-web-service
+https://stackoverflow.com/questions/33143743/read-data-from-multipartfile-which-has-csv-uploaded-from-browser
+https://stackoverflow.com/questions/32990908/geting-http-status-400-required-multipartfile-parameter-file-is-not-present
+https://stackoverflow.com/questions/34587254/accessing-multiple-controllers-with-same-request-mapping
+-- note: URL param name not match also throw such above error
+https://stackoverflow.com/questions/23533355/spring-controller-requestbody-with-file-upload-is-it-possible
+
+https://stackoverflow.com/questions/44176335/restclientexception-could-not-extract-response-no-suitable-httpmessageconverte/44219832
+https://www.petrikainulainen.net/programming/spring-framework/spring-from-the-trenches-parsing-date-and-time-information-from-a-request-parameter/
+https://stackoverflow.com/questions/40274353/how-to-use-localdatetime-requestparam-in-spring-i-get-failed-to-convert-string
+
+curl -X POST "https://tao.ngrok.io/OpenClinica/pages/auth/api/clinicaldata/studies/DD/events" -H "accept: */*" -H "Content-Type: multipart/form-data" -F "endDate=12-11-2020 09:28:03" -F "participantId=AA" -F "startDate=12-11-2019 09:28:03" -F "studyEventOID=CC"
+
+curl -X POST http://tao.ngrok.io/OpenClinica/pages/auth/api/clinicaldata/studies/ABC/participants/bulk -F "file=@C:\sample\temp\participants.txt"
+
+
+-- Spring/message
+http://www.baeldung.com/websockets-spring
+https://spring.io/guides/gs/messaging-stomp-websocket/
+
+-- Sprinf/Email
+https://www.baeldung.com/spring-email
+
+
+-- Spring/QuartsJob
+https://www.mkyong.com/spring/spring-quartz-scheduler-example/
+http://websystique.com/spring/spring-4-quartz-scheduler-integration-example/
+
+-- Spring/boot/angular
+https://developer.okta.com/blog/2018/08/22/basic-crud-angular-7-and-spring-boot-2
+
+----Jhipster
+https://developer.okta.com/blog/2017/06/20/develop-microservices-with-jhipster
+https://therealdanvega.com/blog/2017/04/19/what-is-jhipster
+https://auth0.com/blog/quicktip-use-jhipster/
+https://dzone.com/articles/getting-started-with-jhipster-part-i
+https://dzone.com/articles/easily-generate-a-full-stack-java-javascript-app-w
+https://andy-carter.com/blog/a-beginners-guide-to-the-task-runner-gulp
+https://stackoverflow.com/questions/44564260/starting-jhipster-generated-app-on-a-tomcat-server
+https://www.ionos.com/digitalguide/websites/web-development/jhipster/
+https://github.com/mraible/
+
+--- THis GOOD!!!
+
+--- web services
+https://www.mkyong.com/webservices/jax-rs/jersey-hello-world-example/
+https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design
+https://stackoverflow.com/questions/4044391/rest-get-verb-with-parameters
+https://stackoverflow.com/questions/4024271/rest-api-best-practices-where-to-put-parameters/4026505#4026505
+-- from servlet to controller
+https://stackoverflow.com/questions/35030450/can-i-convert-my-application-in-servlet-to-spring-using-rest-web-service-and-spr
+
+
+-- micro service
+https://www.tutorialspoint.com/microservice_architecture/microservice_architecture_hands_on_soa.htm
 
 -- google trend
 https://trends.google.com/trends/explore?cat=13&q=angular,react,vuejs,polymer,jQuery
+
+--Noepad++
+https://stackoverflow.com/questions/46301700/how-to-view-plugin-manager-in-notepad
+
+
+--oraccle virtual box
+https://hereirestinremorse.wordpress.com/virtualbox/this-kernel-requires-an-x86-64-cpu-but-only-detected-an-i686-cpu-unable-to-boot-please-use-a-kernel-appropriate-for-your-cpu/
+
+--SAS
+http://docs.openclinica.com/3.1/openclinica-user-guide/export-datasets/formats-dataset-files#content-title-4355
+https://support.sas.com/en/software/university-edition.html#gettingstarted
+****************************************************************************
+https://www.sas.com/en_us/software/university-edition/download-software.html#windows-setup
+*****************************************************************************
+http://documentation.sas.com/?docsetId=engxml&docsetTarget=titlepage.htm&docsetVersion=9.4&locale=en
+
+--UML
+https://www.smartdraw.com/uml-diagram/
+--API tools :swagger
+https://www.3pillarglobal.com/insights/restful-api-documentation-using-swagger-and-spring-mvc
+http://www.baeldung.com/swagger-2-documentation-for-spring-rest-api
+http://springfox.github.io/springfox/javadoc/2.7.0/springfox/documentation/spring/web/plugins/Docket.html
+https://swagger.io/docs/swagger-tools/#swagger-ui-documentation-29
+https://github.com/springfox/springfox/issues/1256 --- not suport array of multipart-file 
+https://github.com/swagger-api/swagger-core/wiki/Swagger-2.X---Annotations#parameter
+http://docs.swagger.io/swagger-core/v1.5.0/apidocs/io/swagger/annotations/ApiParam.html
+
+-- database
+http://www.postgresqltutorial.com/creating-first-trigger-postgresql/
+https://www.postgresql.org/docs/9.1/static/plpgsql-trigger.html
+
+--WINDOWS
+http://www.redmondpie.com/windows-10-emoji-keyboard-how-to-enable-and-use-it/
+https://support.microsoft.com/en-us/help/4028019/windows-enable-and-disable-your-touchscreen-in-windows-10
+https://superuser.com/questions/215351/how-do-i-kill-a-process-that-is-dead-but-listening
+
+--cloud
+https://howtodoinjava.com/spring-cloud/consul-service-registration-discovery/
+
+-- KeyCloak
+https://www.baeldung.com/spring-boot-keycloak
+https://developers.redhat.com/blog/2018/03/19/sso-made-easy-keycloak-rhsso/
+
+--Mirth connect
+https://consultzen.com/mirth-connect-resource-center/?url=https://consultzen.com/mirth-connect-resource-center/?source_campaign=resource%center2
+http://www.mirthcorp.com/community/wiki/display/mirth/How+to+create+and+invoke+custom+Java+code+in+Mirth+Connect?focusedCommentId=36505307#comment-36505307
+
+1. down load free opensource for windows 64 bit zip file, and unzip to c:/tools
+down load link: https://consultzen.com/mirth-connect-download/
+2. https://consultzen.com/download-mirth-connect/
+1) cd c:\tools\mirth connect
+2) run mcserver.exe (double click)
+3) https://10.0.11.149:8443/webadmin/DashboardStatistics.action#
+admin/admim
+4) click admin/launch Administrator
+-- ask or update java -- updated
+-- launch Administrator again
+change passowrd: admin/password
+5)
+http://www.mirthcorp.com/community/wiki/display/mirth/Moving+Mirth+Connect+configuration+from+one+database+to+another
+
+6)
+http://smarthl7.com/tools.html
+http://www.mirthcorp.com/community/forums/
+
+7)
+http://www.mirthcorp.com/community/wiki/display/mirth/Creating+a+custom+REST+Service+in+Mirth+3.0.x
+
+ edit channel/destination/in channel tasks /edit transformer click will ipen message tab
+
+-- mirth example
+https://www.outcomehealthcare.com/sample-mirth-connect-project-hl7-2-x-transformation-2-3-to-2-4/
+https://www.youtube.com/watch?v=Mp7k4n1og_s
+https://www.youtube.com/watch?v=5WiXKROUpjU
+https://www.mirthproject.org/community/forums/showthread.php?t=8701
+https://amarnathks.wordpress.com/tag/xml-to-plain-delimited-text-using-mirth/
+https://stackoverflow.com/questions/19675123/how-to-skip-the-header-while-processing-message-in-mirth
+http://www.mirthcorp.com/community/forums/showthread.php?t=11123
+http://www.mirthproject.org/community/forums/showthread.php?t=215717
+http://www.mirthproject.org/community/forums/showthread.php?t=215139
+https://www.mirthcorp.com/community/forums/showthread.php?t=6105
+http://www.mirthproject.org/community/forums/showthread.php?t=9824
+http://www.mirthproject.org/community/forums/showthread.php?t=11765
+http://codeshorts.com/Mirth-convert-message-to-xml
+http://www.mirthproject.org/community/forums/showthread.php?p=263382
+http://www.mirthproject.org/community/forums/showthread.php?p=49444
+https://stackoverflow.com/questions/24992120/modifing-output-xml-files-in-mirth-connect
+https://www.mirthcorp.com/community/forums/showthread.php?t=6105
+http://www.mirthproject.org/community/forums/showthread.php?p=45670
+http://www.mirthproject.org/community/forums/showthread.php?t=9187
+-- mirth/response
+https://stackoverflow.com/questions/21001790/how-do-i-process-response-objects-in-the-response-transformer-for-custom-acknowl
+
+http://wiki.patesco.ca/doku.php?id=hl7:mirth:tutorial
+https://arrow.dit.ie/cgi/viewcontent.cgi?article=1001&context=teapotrep
+
+-- mirth/service
+https://github.com/philoushka/blog/blob/master/calling-aspnet-web-api-rest-from-mirth-connect.md
+https://tutel.me/c/programming/questions/15978335/how+to+send+mirth+http+connector+using+post
+http://www.mirthproject.org/community/forums/showthread.php?t=9122
+-- mirth/token
+https://stackoverflow.com/questions/40014575/get-token-from-destination-response-and-pass-to-new-channel-in-mirth
+https://www.mkyong.com/java/how-to-send-http-request-getpost-in-java/
+https://stackoverflow.com/questions/10479434/server-returned-http-response-code-401-for-url-https
+http://www.mirthcorp.com/community/wiki/display/mirth/Creating+a+custom+REST+Service+in+Mirth+3.0.x
+-- mirth/response
+http://www.mirthproject.org/community/forums/showthread.php?t=9828
+
+--linux
+https://www.thegeekstuff.com/2017/01/mirthconnect-install-linux/
+
+
+http://www.mirthcorp.com/community/wiki/display/mirth/Creating+a+custom+REST+Service+in+Mirth+3.0.x
+http://www.mirthproject.org/community/forums/showthread.php?t=6194
+http://www.mirthproject.org/community/forums/showthread.php?t=9688
+https://www.baeldung.com/jersey-jax-rs-client
+https://www.baeldung.com/rest-template
+https://stackoverflow.com/questions/35461148/how-to-send-xml-post-requests-with-spring-resttemplate
+https://stackoverflow.com/questions/28862483/spring-and-jackson-how-to-disable-fail-on-empty-beans-through-responsebody/28862597
+https://stackoverflow.com/questions/19540289/how-to-fix-the-java-security-cert-certificateexception-no-subject-alternative
+https://stackoverflow.com/questions/32915964/spring-resttemplate-error-calling-a-https-rest-service-certificate-error
+https://www.mirthcorp.com/community/forums/showthread.php?t=218606
+http://www.mirthproject.org/community/forums/showthread.php?t=217476&highlight=create+Channel+API
+https://stackoverflow.com/questions/34841899/java-security-cert-certificateexception-no-subject-alternative-names-present
+https://www.baeldung.com/httpclient-multipart-upload
+https://www.mkyong.com/java/apache-httpclient-examples/
+https://howtodoinjava.com/regex/java-clean-ascii-text-non-printable-chars/
+https://stackoverflow.com/questions/44305351/send-data-in-request-body-using-httpurlconnection
+https://aws.amazon.com/blogs/big-data/create-a-healthcare-data-hub-with-aws-and-mirth-connect/
+https://www.techcoil.com/blog/how-to-upload-a-file-via-a-http-multipart-request-in-java-without-using-any-external-libraries/
+https://blog.morizyun.com/blog/android-httpurlconnection-post-multipart/index.html
+
+http://www.mirthcorp.com/community/forums/showthread.php?p=33452
+https://www.programcreek.com/java-api-examples/org.apache.http.entity.mime.content.FileBody
+http://www.mirthproject.org/community/forums/showthread.php?p=39788
+https://stackoverflow.com/questions/51473509/mirth-connect-processing-attachment
+https://stackoverflow.com/questions/9980416/how-can-i-insert-new-line-carriage-returns-into-an-element-textcontent
+
+-***
+https://www.mirthcorp.com/community/forums/showthread.php?t=13418
+https://stackoverflow.com/questions/11766878/sending-files-using-post-with-httpurlconnection
+
+-Mirth to read
+https://help.datica.com/hc/en-us/articles/115005322583-Mirth-Channel-Overview 
+http://www.mirthcorp.com/community/wiki/display/mirth/Examples+and+Tutorials
+
+--Mirth/Linux
+1.wget http://downloads.mirthcorp.com/connect/3.6.1.b220/mirthconnect-3.6.1.b220-unix.tar.gz
+2. tar xvfz mirthconnect-3.6.1.b220-unix.tar.gz
+3.https://www.thegeekstuff.com/2017/01/mirthconnect-install-linux/
+
+--Mirth/ngix
+https://stackshare.io/stackups/apache-httpd-vs-nginx
+https://gist.github.com/soheilhy/8b94347ff8336d971ad0
+https://nginx.org/en/docs/http/request_processing.html
+https://www.genb.technology/post/how-to-configure-nginx-with-ssl-as-a-reverse-proxy-for-mirth
+https://stackoverflow.com/questions/25077476/upstream-sent-no-valid-http-1-0-header-while-reading-response-header-from-upstre
+
+--PDFbox utf-8
+https://stackoverflow.com/questions/51481600/handle-many-unicode-caracters-with-pdfbox
+https://djmilch.wordpress.com/2016/01/19/free-font-noto-sans-cjk-in-ttf/
+https://github.com/mkl-public/testarea-pdfbox2/blob/master/src/test/java/mkl/testarea/pdfbox2/content/AddTextWithDynamicFonts.java#L83
+
+
+1. putty login Mirth jump 52.86.229.48;
+    -- a) attach private key
+	-- b) Make sure that "Allow Agent Forwarding" is checked in the putty configuration
+2.> ssh root@172.20.21.166
+3.>service nginx restart
+   > service nginx stop
+   > cat logs/mirth.log
+4.>vim /etc/nginx/conf.d/mirth.conf
+   >vim /usr/local/nginx/conf/.htpasswd 
+   >tail -f /var/log/nginx/*.log
+   vim ~/.ssh/authorized_keys
+   >11 webpps/
+   >locate mirth
+   >history | grep vim
+   >locate jnlp 
+   > locate webstart*
+   >locate webadmin
+   >updatedb
+   >mv ocbridge.conf mirth.conf
+   >sestatus
+   >netstat -atn
+   >mkdir -p /usr/local/nginx/conf/
+   > sudo vim /usr/local/nginx/conf/.htpasswd 
+   >mkdir /etc/nginx/conf
+   >setenforce
+   >semanage port -m -t http_port -p tcp 80   (8080,8043,8081)
+   >systemctl enable nginx
+   >aws s3 cp s3://openclinica-dev-ec2-deploy/OC4/Bridge/config/nginx/nginx.conf /etc/nginx/
+   >rm -f /etc/nginx/conf.d/default.conf
+   >openssl dhparam -out /etc/ssl/certs/dhparam2048.pem 2048
+   > openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt -subj "/C=US/ST=Massachusetts/L=Waltham/O=OpenClinica/OU=IT Department/CN=bridgeselfsigned.openclinca.io"
+   > chmod 700 /etc/ssl/private
+   > systemctl restart firewalld
+   > firewall-offline-cmd --zone=public --permanent --add-service=http
+   >firewall-offline-cmd --zone=public --permanent --add-service=https
+   >systemctl start firewalld
+   >systemctl enable firewalld
+   >yum -y install htop git glances nginx mlocate vim yum-cron firewalld
+   >yum -y install http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
+   >reboot
+   >yum update
+   > hostnamectl set-hostname "mirth.dev.openclinica.io"
+   > yum install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm unzip
+   > curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
+   >unzip awscli-bundle.zip
+   > ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
+   > yum install -y htop git glances mlocate vim yum-cron firewalld wget s3cmd
+   > sudo dd if=/dev/zero of=/swapfile count=4096 bs=1MiB
+   >mkswap /swapfile
+   > bash -c "echo 'vm.swappiness=10' >> /etc/sysctl.conf"
+    yum -y install sysstat bind-utils
+   
+--- https://nginx.org/en/docs/   
+
+-- book
+http://www.docin.com/p-1704534537.html
+
+
+
+-- Gradle
+https://www.mkyong.com/gradle/gradle-how-to-continue-build-if-test-is-failed/
+-- need to test below
+https://dzone.com/articles/how-to-convert-maven-to-gradle-and-vice-versa
+
+-- Java
+https://examples.javacodegeeks.com/core-java/xml/parsers/documentbuilderfactory/create-xml-file-in-java-using-dom-parser-example/
+
 ===============================================================
 To read:
 https://www.tutorialspoint.com/spring/index.htm
-
 https://www.w3schools.com/xml/default.asp
+
+
+--Enketo
+https://enketo.org/
+https://github.com/enketo
+
+-- regular expression
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+
+-- service consultzenhttps://www.digitalocean.com/community/tutorials/an-introduction-to-using-consul-a-service-discovery-system-on-ubuntu-14-04
+
+=================================================================
+[root@mirth ~]# history
+    1  yum update
+    2* yum install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm unzip yum install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm unzip
+    3* curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
+    4* unzip awscli-bundle.zipunzip awscli-bundle.zip
+    5* ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
+    6  yum -y install epel-release
+    7* yum install -y htop git glances mlocate vim yum-cron firewalld wget s3cmd yum install -y htop git glances mlocate vim yum-cron firewalld wget s3cmd
+    8* sudo dd if=/dev/zero of=/swapfile count=4096 bs=1MiB sudo dd if=/dev/zero of=/swapfile count=4096 bs=1MiB
+    9  chmod 600 /swapfile
+   10* mkswap /swapfilemkswap /swapfile
+   11  swapon /swapfile
+   12* bash -c "echo 'vm.swappiness=10' >> /etc/sysctl.conf" bash -c "echo 'vm.swappiness=10' >> /etc/sysctl.conf"
+   13  bash -c "echo 'vm.vfs_cache_pressure = 50' >> /etc/sysctl.conf"
+   14  bash -c "echo '/swapfile   swap    swap    sw  0   0' >> /etc/fstab"
+   15* yum -y install sysstat bind-utils yum -y install sysstat bind-utils
+   16  yum -y update
+   17  reboot
+   18  ll
+   19  history
+   20  htop
+   21  shutdown -h now
+   22  vi ~/.ssh/authorized_keys
+   23* hostnamectl set-hostname "mirth.dev.openclinica.io" hostnamectl set-hostname "mirth.dev.openclinica.io"
+   24  yum update
+   25  reboot
+   26  history
+   27  w
+   28  yum -y install http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
+   29* yum -y install htop git glances nginx mlocate vim yum-cron firewalld  yum -y install htop git glances nginx mlocate vim yum-cron firewalld
+   30* systemctl enable firewalldsystemctl enable firewalld
+   31* systemctl start firewalldsystemctl start firewalld
+   32  firewall-offline-cmd --zone=public --add-service=https
+   33* firewall-offline-cmd --zone=public --permanent --add-service=httpsfirewall-offline-cmd --zone=public --permanent --add-service=https
+   34  firewall-offline-cmd --zone=public --add-service=http
+   35* firewall-offline-cmd --zone=public --permanent --add-service=http firewall-offline-cmd --zone=public --permanent --add-service=http
+   36* systemctl restart firewalldsystemctl restart firewalld
+   37  mkdir /etc/ssl/private
+   38* chmod 700 /etc/ssl/private chmod 700 /etc/ssl/private
+   39* openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt -subj "/C=US/ST=Massachusetts/L=Waltham/O=OpenClinica/OU=IT Department/CN=bridgeselfsigned.openclinca.io" openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt -subj "/C=US/ST=Massachusetts/L=Waltham/O=OpenClinica/OU=IT Department/CN=bridgeselfsigned.openclinca.io"
+   40* openssl dhparam -out /etc/ssl/certs/dhparam2048.pem 2048openssl dhparam -out /etc/ssl/certs/dhparam2048.pem 2048
+   41* rm -f /etc/nginx/conf.d/default.confrm -f /etc/nginx/conf.d/default.conf
+   42  aws s3 cp s3://openclinica-dev-ec2-deploy/OC4/Bridge/config/nginx/ocbridge.conf /etc/nginx/conf.d/
+   43* aws s3 cp s3://openclinica-dev-ec2-deploy/OC4/Bridge/config/nginx/nginx.conf /etc/nginx/aws s3 cp s3://openclinica-dev-ec2-deploy/OC4/Bridge/config/nginx/nginx.conf /etc/nginx/
+   44  systemctl enable nginx
+   45  service nginx restart
+   46  vim /etc/nginx/conf.d/ocbridge.conf
+   47  vim ~/.ssh/authorized_keys
+   48  tail -f /var/log/nginx/*.log
+   49  ssh root@import
+   50  ssh root@import.dev
+   51  cat /var/log/secure
+   52  vim ~/.ssh/authorized_keys
+   53  tail -f /var/log/secure
+   54  vim /etc/nginx/conf.d/ocbridge.conf
+   55  nginx -t
+   56  serviec nginx restart
+   57  service nginx restart
+   58  netstat -atn
+   59  vim /etc/nginx/conf.d/ocbridge.conf
+   60  service nginx restart
+   61  tail -f /var/log/nginx/*.log
+   62  sestatus
+   63  setenforce 0
+   64  sestatus
+   65  semanage port -m -t http_port_t -p tcp 8081
+   66  setenforce 1
+   67  sestatus
+   68  history
+   69  semanage port -m -t http_port_t -p tcp 8443
+   70  semanage port -m -t http_port_t -p tcp 8080
+   71  semanage port -m -t http_port_t -p tcp 80
+   72  netstat -atn
+   73  vim /etc/nginx/conf.d/ocbridge.conf
+   74  service nginx restart
+   75  vim /etc/nginx/conf.d/ocbridge.conf
+   76  service nginx restart
+   77  setenforce -
+   78  setenforce 0
+   79  history
+   80  updatedb
+   81  locate mirth
+   82  cd /opt/mirthconnect/logs
+   83  ll
+   84  cat mirth.log
+   85  ll
+   86  cd ..
+   87  ll
+   88  ll conf/
+   89  vim conf/mirth.properties
+   90  netstat -atn
+   91  cp /etc/nginx/conf.d/ocbridge.conf /etc/nginx/
+   92  vim /etc/nginx/conf.d/ocbridge.conf
+   93  nginx -t
+   94  service nginx restart
+   95  ll /etc/nginx/conf/
+   96  mkdir /etc/nginx/conf/
+   97  vim /etc/nginx/conf/.htpasswd
+   98  vim /usr/local/nginx/conf/.htpasswd
+   99  sudo vim /usr/local/nginx/conf/.htpasswd
+  100  mkdir -p /usr/local/nginx/conf/
+  101  vim /usr/local/nginx/conf/.htpasswd
+  102  vim /etc/nginx/conf
+  103  vim /etc/nginx/conf.d/ocbridge.conf
+  104  cat logs/mirth.log
+  105  vim /etc/nginx/conf.d/ocbridge.conf
+  106  service nginx restart
+  107  vim /etc/nginx/conf.d/ocbridge.conf
+  108  service nginx restart
+  109  vim /etc/nginx/conf.d/ocbridge.conf
+  110  service nginx restart
+  111  vim /etc/nginx/conf.d/ocbridge.conf
+  112  service nginx stop
+  113  rm -rf /var/log/nginx/*
+  114  cd /etc/nginx/
+  115  ll
+  116  ll conf
+  117  rm -rf conf/
+  118  ll
+  119  service nginx start
+  120  history | grep vim
+  121  vim /usr/local/nginx/conf/.htpasswd
+  122  vim /etc/nginx/conf.d/ocbridge.conf
+  123  service nginx restart
+  124  vim /etc/nginx/conf.d/ocbridge.conf
+  125  service nginx restart
+  126  netstat -atn
+  127  sestatus
+  128  ll
+  129  cd conf.d/
+  130  ll
+  131  mv ocbridge.conf mirth.conf
+  132  service nginx restart
+  133  vim mirth.conf
+  134  nginx -t
+  135  service nginx restart
+  136  history
+  137  w
+  138  vim mirth.conf
+  139  service nginx restart
+  140  locate webadmin
+  141  vim /etc/nginx/conf.d/mirth.conf
+  142  service nginx restart
+  143  vim /etc/nginx/conf.d/mirth.conf
+  144  service nginx restart
+  145  tail -f /var/log/nginx/*.log
+  146  updatedb
+  147  locate webstart.jnlp
+  148  locate webstart
+  149  locate webstart*
+  150  locate jnlp
+  151  history
+  152  locate mirth
+  153  cd /opt/mirthconnect/
+  154  ll
+  155  ll webapps/
+  156  tail -f /var/log/nginx/*.log
+  157  hostname
+  158  pwd
+  159  ls
+  160  ping import.dev.openclinica.io
+  161  ls
+  162  pwd
+  163  cd ..
+  164  ls
+  165  cd opt
+  166  ls
+  167  java -version
+  168  yum -y install java-1.8.0-openjdk
+  169  ls
+  170  pwd
+  171  ls
+  172  java -version
+  173  rpm -qa|grep -i jdk
+  174  ls
+  175  pwd
+  176  cd ..
+  177  ls
+  178  cd root
+  179  ls
+  180  cd ..
+  181  pwd
+  182  cd opt
+  183  ls
+  184  ls -al
+  185  java -version
+  186  pwd
+  187  cd ../root
+  188  pwd
+  189  ls
+  190  wget http://downloads.mirthcorp.com/connect/3.6.1.b220/mirthconnect-3.6.1.b220-unix.tar.gz
+  191  ls
+  192  ls -al
+  193  tar xvfz mirthconnect-3.6.1.b220-unix.tar.gz
+  194  ls -al
+  195  mv Mirth\ Connect/ /opt/mirthconnect
+  196  ##vi /opt/mirthconnect/conf/mirth.properties
+  197  vi /opt/mirthconnect/conf/mirth.properties
+  198  pwd
+  199  cd ..
+  200  cd opt
+  201  ls
+  202  cd mirthconnect
+  203  ls
+  204  ./mcserver start
+  205  ./mcserver start&
+  206  ps -ef | grep mirth
+  207  ls
+  208  ps -ef|grep mirth
+  209  systemctl enable mirthconnect
+  210  vi /usr/lib/systemd/system/mirthconnect.service
+  211  systemctl enable mirthconnect
+  212  hostname
+  213  logout
+  214  vim /etc/nginx/conf.d/mirth.conf
+  215  history
+
+
+
+-----other:
+curl --request POST \
+--url 'https://oc4.auth0.com/oauth/token' \
+--header 'content-type: application/json' \
+--data '{"grant_type":"http://auth0.com/oauth/grant-type/password-realm","username": "sak1","password": "password","audience": "https://www.openclinica.com", "scope": "read:sample", "client_id": "EJLMXQDYENJOWP9zgZn3d79zv4L1yMF5", "client_secret": "5Kq7q831Bpnhcf5-OYQh8ideyJaw4Xehls7DdQ-wB0EMvWEZBfCKHVW1kFJTm1in", "realm": "yogi-aws-dev"}'
+
+-- DB schema
+ public static void setSchema(Connection conn) throws SQLException {
+        Statement statement = conn.createStatement();
+        String schema = null;
+
+        schema = handleMultiSchemaConnection(conn);
+
+        logger.debug("Using schema in CoreResources:schema:" + schema);
+        if (conn.getSchema().equalsIgnoreCase(schema))
+            return;
+        try {
+            statement.execute("set search_path to '" + schema + "'");
+        } finally {
+            statement.close();
+        }
+    }
+
+
+--OC4
+1--set up ngrok
+https://dashboard.ngrok.com/get-started
+2-- SBSURL:
+https://tao.build.dev.openclinica.io/#/
+3--- Local runtime
+https://tao.ngrok.io/OpenClinica/MainMenu
+
+4. cd  c:\tools\ngrok
+ >ngrok.exe - ngrok http -subdomain=tao 8080
+ 
+ 
+ -- AWS LINUX 
+ https://devopscube.com/setup-gui-for-amazon-ec2-linux/
+ https://comtechies.com/how-to-set-up-gui-on-amazon-ec2-ubuntu-server.html
+ https://tutorials.ubuntu.com/tutorial/tutorial-ubuntu-on-windows#2
+ https://www.cs.drexel.edu/~julia/cs500/documents/lectures/LinuxIntro.pdf
+ https://www.rootusers.com/how-to-start-gui-in-centos-7-linux/
+ https://www.rootusers.com/how-to-install-gnome-gui-in-centos-7-linux/
+https://www.howtoforge.com/tutorial/putty-remote-x11-desktop-applications/
+http://www.tutorialspoint.com/unix_commands/semanage.htm
+https://danwalsh.livejournal.com/47533.html
+https://www.cyberciti.biz/faq/ubuntu-18-04-setup-ssh-public-key-authentication/
+ 
+ -- LINUX/Postgres
+http://www.yolinux.com/TUTORIALS/LinuxTutorialPostgreSQL.html
+ https://www.postgresql.org/message-id/001f01c018c2$830133b0$64898cd5@northlink.gr
+ /////////PSQL CUST1-DEV//////////////
+ 1) to check database information, in putty/linux, after went to cust1:
+> head -20 /opt/tomcat/webapps/OpenClinica/WEB-INF/classes/datainfo.properties
+OR
+>head -20 /opt/tomcat/runtime-config/datainfo.properties
+psql --host runtime-rds.openclinica-dev.io --port=5432 --username=cust2_dev --password --dbname=cust2_dev
+
+
+ 2)psql --host runtime-dev01.cob1sx1enbkn.us-east-1.rds.amazonaws.com --port=5432 --username=runtimemaster --password --dbname=postgres
+ 
+
+ -- for CUST2-dev
+ psql --host runtime-rds.openclinica-dev.io --port=5432 --username=cust2_dev --password --dbname=cust2_dev
+ 
+ --- for 315-staging
+dbPass=************
+
+psql --host oc3-rds-staging.eclinicalhosting.com --port=5432 --username=315_staging --password --dbname=postgres
+
+
+
+select * from dataset where name in ('Extração Prospe de Pulmão Luiz DOB','OC Support Dataset 2','ggg')
+
+select * from rule where name like '%CEAE28_JOE%';
+
+
+
+select * from user_account where user_name='cab001';
+ 
+ 3)set search_path to s_newjuno2prod
+ 
+ 4)select * from study_subject ss
+  where ss.oc_oid='SS_BOSTON00_9184';
+ 5) to quit:\q   
+  
+
+zoc!m3Zdo*NrTX&V
+
+more sql:
+select schema_name
+from information_schema.schemata;
+
+more:
+https://chartio.com/resources/tutorials/how-to-list-databases-and-tables-in-postgresql-using-psql/
+
+=======================================================================================================
+CREATE ROLE mirth_dev WITH PASSWORD '67KKWnEWNp5ucp5X' LOGIN CREATEDB;
+GRANT rds_superuser TO mirth_dev;
+-----------------
+
+psql --host runtime-dev01.cob1sx1enbkn.us-east-1.rds.amazonaws.com --port=5432 --username=mirth_dev --password --dbname=mirth_dev
+
+createdb -h runtime-dev01.cob1sx1enbkn.us-east-1.rds.amazonaws.com -p 5432 -U mirth_dev -O mirth_dev -E UTF8 mirth_dev
+
+dropdb -h runtime-dev01.cob1sx1enbkn.us-east-1.rds.amazonaws.com -p 5432 -U mirth_dev mirth_dev
+
+pg_restore -h runtime-dev01.cob1sx1enbkn.us-east-1.rds.amazonaws.com -p 5432 -U mirth_dev  -O -d mirth_dev < backupfile.backup
+ ///////////////////////
+ export DISPLAY=aws-dev-jump.dev.openclinica.io:0.0
+ [10:37 AM] Tao Li: Found 2 issues: 1 In 
+https://import.build.dev.openclinica.io/#/ 
+[https://import.dev.openclinica.io/,
+https://mirth.dev.openclinica.io/webadmin/Index.action
+
+/////////////////////////////////////////
+curl -X POST --dump-header - http://127.0.0.1:8888/oc_file_process/
+ 
+ https://github.com/Taoli2018/OpenClinica.git
+ 
+ http://mirrors.ibiblio.org/apache/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.tar.gzweget
+ 
+ sudo update-alternatives --install "/usr/bin/mvn" "mvn" "/opt/apache-maven-3.6.0/bin/mvn" 0
+sudo update-alternatives --set mvn /opt/apache-maven-3.6.0/bin/mvn
+
+
+scp root@import.dev:/opt/tomcat/webapps/OpenClinica/WEB-INF/classes/datainfo.properties /mnt/c/tools
+
+-------------------------------------------------------------------------------------------------------------------------------
+****************import DEV deploylmet*******************************************************
+-------------------------------------------------------------------------------------------------------------------------------
+1. change to root user:
+ #unixroot@7KRW-T570-W10:~$ sudo su -
+2.# scp /mnt/c/tools/apache-tomcat-7.0.82/webapps/OpenClinica.war root@import.dev:/opt/tomcat/webapps
+--- assume at this time tomcat is running, so will automatically deploy new war file
+   # ssh root@import.dev
+   # ls -al /opt/tomcat/webapps
+3.  # cp /root/temp/datainfo_old.properties /opt/tomcat/webapps/OpenClinica/WEB-INF/classes/datainfo.properties
+   
+4.#reboot
+
+5. test at:
+
+https://import.build.dev.openclinica.io/#/ 
+[https://import.dev.openclinica.io/,
+
+--- emoj --
+https://stackoverflow.com/questions/7177808/emoji-characters-cannot-be-encoded-to-json
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+****************mirth DEV deployment ******************************************************
+-------------------------------------------------------------------------------------------------------------------------------
+ 1.if have transformer java code change, in Eclipse,export the jar file first at :c/tools/Mirth Connect/custom-lib/OCImportLib.jar
+ 2. if step 1, then need do step 2:
+	 # cd /mnt/c/tools/Mirth Connect/custom-lib
+	 #scp OCImportLib.jar root@mirth.dev:/opt/mirthconnect/custom-lib
+	 #ssh root@mirth.dev
+	 #ls -al /opt/mirthconnect/custom-lib
+ 3. if have mirth channel code change at local, then export channel first as xml file 
+ 4. if have step3 then do step 4: import the exported channel (did in step 3)
+    --- Note: the you may change the port# in DEV, then save and redeploy the channel
+ 5. #service mirthconnect restart
+ 6. test at:
+ https://mirth.dev.openclinica.io/webadmin/Index.action
+ 
+===== LINUX transfer file to windows ===================================================
+1. use putty login staging-JUMP machine (18.217.134.77)
+root@openvpnas2:
+
+2.get log file from: qe.staging.openclinica.io (172.30.20.210)
+>scp root@172.30.20.210:/opt/tomcat/logs/openclinica.log /mnt
+-- other example for cust2-dev
+>scp root@10.30.20.36:/opt/tomcat/openclinica.data/bulk_jobs/PARTICIPANT_PDF_CASEBOOK/Participant_SUB1_Casebook_2019-11-06-083536201+0000.pdf /mnt
+>scp root@172.24.20.248:/usr/share/tomcat/openclinica.config/datainfo.properties /mnt
+#https://cs-us-06.eclinicalhosting.com
+scp root@172.24.21.157:/usr/share/tomcat/openclinica.data/xslt /mnt
+
+#us-09, ubuntu
+scp root@cs-us-09:/usr/local/oc/backup/manual/openclinica-V-OC-2020-05-21.backup /mnt/c/mnt
+
+	   
+3. use WinScp copy from staging-JUMP /mnt folder to local windows machine.
+ 
+ 
+ === OC URL/HOST ================
+ https://github.com/OpenClinica/ssh-config/blob/master/config
+ https://jenkins.openclinica.io/
+ 
+ === password===
+ 
+ https://passwordsgenerator.net/sha1-hash-generator/
+ 
+ ========glowroot
+ https://glowroot-us.eclinicalhosting.com/
+ 
+ ======= oc3 locked user account
+  update user_account set status_id=1, account_non_locked=true,lock_counter=0 where user_name='root';
+  
+  
+  ======= us
+  WORKFLOW FOR TRANSFERING WAR TO BOX (FOR WINDOWS)
+Requirements:
+    Ubuntu client and ssh must be installed and available
+    Must have ssh enabled in Ubuntu client
+    Must have C drive mounted in Ubuntu client. See System Admin for assistance.
+1.  Open Ubuntu client on windows
+2.  Ensure SSH is enabled
+3.  navigate to mounted C drive in windows by using following command
+        cd /mnt/c
+4.  navigate to folder that contains war
+        cd /mnt/c/path/to/war
+5.  ssh in to box and turn off tomcat with following command
+        service tomcat stop
+6.  remove OpenClinica directory in /usr/share/tomcat/webapps/ directory
+7.  disconnect from box and run scp command for war called 'OpenClinica.war'
+        scp OpenClinica.war root@hostname:/usr/share/tomcat/webapps/
+8.  turn on tomcat with following command
+        service tomcat start
+		=========================================
+		1211  2020-06-03 18:32:59 - 18:32:59 vim /etc/tomcat/tomcat.conf
+ 1212  2020-06-03 18:33:43 - 18:33:43 vim /usr/share/tomcat/glowroot/glowroot.properties
+ 1213  2020-06-10 18:48:10 - 18:48:10 service tomcat restart
+ 1214  2020-06-10 18:48:36 - 18:48:36 service tomcat status
+ 1215  2020-06-10 18:48:41 - 18:48:41 ls
+ 1216  2020-06-10 18:46:45 - 18:46:45 su postgres
+ 1217  2020-06-10 18:47:56 - 18:47:56 history
+ 1218  2020-06-10 18:48:05 - 18:48:05 vim /usr/share/tomcat/glowroot/glowroot.properties
+ 1219  2020-06-10 18:48:33 - 18:48:33 vim /usr/share/tomcat/openclinica.config/datainfo.properties
+ 1220  2020-06-10 18:49:37 - 18:49:37 su postgres
+ 1221  2020-06-11 16:24:02 - 16:24:02 vim /etc/nginx/conf.d/openclinica.conf
+ 1222  2020-07-01 15:23:30 - 15:23:30 tail -f *.log
+ 1223  2020-07-01 15:23:55 - 15:23:55 locate openclinica.log
+ 1224  2020-07-01 15:24:10 - 15:24:10 locate *.log
+ 1225  2020-07-01 15:24:51 - 15:24:51 tail -f /var/log/tomcat/openclinica.2020-07-01.log
+ 1226  2020-07-01 18:59:58 - 18:59:58 locate *.bak
+ 1227  2020-07-01 19:00:34 - 19:00:34 locate *.backup
+ 1228  2020-07-01 19:01:24 - 19:01:24 ls -al /usr/local/oc/backup/manual
+ 1229  2020-07-01 19:21:55 - 19:21:55 exit
+ 1230  2020-07-07 18:47:01 - 18:47:01 su postgres
+ 1231  2020-07-07 18:47:56 - 18:47:56 vim /usr/share/tomcat/openclinica.config/datainfo.properties
+ 1232  2020-07-07 18:48:21 - 18:48:21 su postgres
+ 1233  2020-07-07 18:50:42 - 18:50:42 service tomcat restart
+ 1234  2020-07-07 18:54:56 - 18:54:56 su postgres
+ 1235  2020-07-07 19:04:08 - 19:04:08 vim /usr/share/tomcat/openclinica.config/datainfo.properties
+ 1236  2020-07-07 19:06:29 - 19:06:29 su postgres
+ 1237  2020-07-16 18:14:32 - 18:14:32 ls -la
+ 1238  2020-07-16 18:14:59 - 18:14:59 history
+ 1239  2020-07-16 18:15:14 - 18:15:14 cd /usr/share/tomcat/
+ 1240  2020-07-16 18:15:15 - 18:15:15 ls -la
+ 1241  2020-07-16 18:15:18 - 18:15:18 cd webapps
+ 1242  2020-07-16 18:15:19 - 18:15:19 ls -la
+ 1243  2020-07-16 18:15:25 - 18:15:25 pwd
+ 1244  2020-07-16 18:19:37 - 18:19:37 ps aux | grep tomcat
+ 1245  2020-07-16 18:20:41 - 18:20:41 history
+ 1246  2020-07-16 18:20:53 - 18:20:53 service tomcat stop
+ 1247  2020-07-16 18:21:03 - 18:21:03 ps aux | grep tomcat
+ 1248  2020-07-16 18:21:11 - 18:21:11 cd /usr/share/tomcat/webapps
+ 1249  2020-07-16 18:21:12 - 18:21:12 ls -la
+ 1250  2020-07-16 18:21:31 - 18:21:31 rm -rf OpenClinica
+ 1251  2020-07-16 18:21:32 - 18:21:32 ls -la
+ 1252  2020-07-16 18:22:12 - 18:22:12 cd /usr/share/tomcat/webapps
+ 1253  2020-07-16 18:22:13 - 18:22:13 ls -la
+ 1254  2020-07-16 18:22:28 - 18:22:28 service tomcat start
+ 1255  2020-07-16 18:22:41 - 18:22:41 tail -f /usr/share/tomcat/logs/*
+ 1256  2020-07-16 18:39:40 - 18:39:40 pwd
+ 1257  2020-07-16 18:39:49 - 18:39:49 history
